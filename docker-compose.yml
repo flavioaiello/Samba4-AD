@@ -6,12 +6,7 @@ services:
     build: .
     environment:
       - DOMAIN=LAB
-      - REALM=LAB.MYDOMAIN.COM
-    volumes:
-      - /tmp/smb-conf:/etc/samba
-      - /tmp/krb-conf/krb5.conf:/etc/krb5.conf
-      - /tmp/smb-data:/var/lib/samba
-      - /tmp/krb-data:/var/lib/krb5kdc
+      - REALM=LAB.SAMPLE.COM
     ports:
       - "22:22"
       - "53:53"
